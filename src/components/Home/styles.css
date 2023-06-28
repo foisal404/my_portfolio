@@ -1,0 +1,32 @@
+.box{
+    width: 500px;
+    height: 400px;
+    margin: 100px 0 0 170px;
+    /* border: 7px solid #ffffff50; */
+    border: 7px solid #00000042;
+    float: left;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-image: linear-gradient(45deg,#08aeea,#2af598 100%);
+    animation: morph 8s ease-in-out infinite;
+}
+.box2{
+    background: url(https://i.ibb.co/nrPhq4N/IMG-20220503-231601-fpfregview.png) no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 500px;
+    background-position: top -10px center;
+    background-blend-mode: multiply;
+    animation: morphTwo 8s ease-in-out infinite 1s;
+}
+
+@keyframes morphTwo{
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70%  40% ;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30%  60% ;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70%  40% ;
+    }
+}
