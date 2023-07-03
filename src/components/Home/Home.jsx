@@ -3,8 +3,8 @@
 import { Link } from "react-router-dom";
 import "./styles.css";
 import { Typewriter } from "react-simple-typewriter";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 AOS.init();
 
 const Home = () => {
@@ -20,7 +20,10 @@ const Home = () => {
   return (
     <div className="hero min-h-screen bg-base-100 relative top-0" id="home">
       <div className="hero-content flex-col md:flex-row-reverse w-full text-center md:text-left">
-        <div data-aos="zoom-in-left" className="box box2 h-[300px] w-[300px] lg:w-[400px] lg:h-[500px] mx-auto md:me-0 ">
+        <div
+          data-aos="zoom-in-left"
+          className="box box2 h-[300px] w-[300px] lg:w-[400px] lg:h-[500px] mx-auto md:me-0 "
+        >
           {/* image  */}
         </div>
         <div>
@@ -76,6 +79,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+      
     </div>
   );
 };
