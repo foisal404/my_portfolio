@@ -1,6 +1,9 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Contact = () => {
   const form = useRef();
@@ -25,22 +28,7 @@ const Contact = () => {
       );
   };
   return (
-    // <div className="hero min-h-screen  bg-base-100 relative top-0" id="conatct">
-    //   <div className="hero-content flex-col md:flex-row-reverse w-full">
-    //     <div>
-    //       <form ref={form} onSubmit={sendEmail}>
-    //         <label>Name</label>
-    //         <input type="text" name="from_name" />
-    //         <label>Email</label>
-    //         <input type="email" name="from_email" />
-    //         <label>Message</label>
-    //         <textarea name="message" />
-    //         <input type="submit" value="Send" />
-    //       </form>
-    //     </div>
-    //   </div>
-    // </div>
-    <div className="hero min-h-screen bg-base-200 relative top-0" id="conatct">
+    <div data-aos="fade-up-right" className="hero min-h-screen bg-base-200 relative top-0" id="conatct">
       <div className="hero-content flex-col lg:flex-row w-full">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Connect with me</h1>
@@ -52,6 +40,7 @@ const Contact = () => {
           <div>
             <h2>Email: foisalahmmed2@gmail.com</h2>
             <h2>Phone: +8801969871727</h2>
+            <h2>Location: Dhake, Bangladesh </h2>
           </div>
           <div className="flex my-5 gap-2 justify-center lg:justify-start">
             <Link to="https://stackoverflow.com/users/11481168/foisal">

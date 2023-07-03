@@ -10,20 +10,25 @@ import daisyIco from "../../assets/image/daisy.svg";
 import htmlIco from "../../assets/image/html5-original.svg";
 import cssIco from "../../assets/image/css3-plain.svg";
 import npmIco from "../../assets/image/npm.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// ..
+AOS.init();
 const About = () => {
-
   return (
-      <div className="hero min-h-screen bg-base-200" id="about">
-        <div className="hero-content ">
-          <div>
-            <h1 className="text-5xl font-bold">A dedicated Developer</h1>
-            <p className="py-6">
-              I'm a self-taught web developer and visual designer with
-              experience in designing new features from ideation to production,
-              implementation of wireframes and design flows into high
-              performance software applications.
-            </p>
-
+    <div className="hero min-h-screen bg-base-200" id="about">
+      <div className="hero-content ">
+        <div>
+          <h1 className="text-5xl font-bold">A dedicated Developer</h1>
+          <p className="py-6">
+            I'm a self-taught web developer and visual designer with experience
+            in designing new features from ideation to production,
+            implementation of wireframes and design flows into high performance
+            software applications.
+          </p>
+          <div
+            data-aos="zoom-in-up"
+          >
             <h2 className="text-2xl text-blue-500">Technologies and Skills</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 md:gap-10 mt-5">
               <div className="flex items-center px-4 py-2 bg-base-300 rounded-md">
@@ -78,6 +83,7 @@ const About = () => {
           </div>
         </div>
       </div>
+    </div>
   );
 };
 

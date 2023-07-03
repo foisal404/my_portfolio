@@ -2,7 +2,7 @@ import { Link } from 'react-scroll'
 
 const NavHead = () => {
   return (
-    <div className="navbar bg-base-100 sticky top-0 z-10">
+    <div className="navbar bg-base-100 fixed top-0 z-10">
       <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl">foisal.dev</a>
       </div>
